@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
     let todo: string = "";
 
     import {addTodo} from "../stores/todoStore"
