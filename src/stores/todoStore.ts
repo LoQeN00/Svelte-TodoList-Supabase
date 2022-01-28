@@ -35,7 +35,7 @@ export const toggleTodoCompleted = (id:number) => {
     todos.update(todos => {
         const index = todos.findIndex(todo => todo.id === id)
 
-        if (!index) return
+        if (index === -1) return
         
         todos[index].completed = !todos[index].completed
 
