@@ -10,7 +10,7 @@
 
         try {
             loading = true
-            const {error} = await supabase.auth.signIn({email})
+            const {error} = await supabase.auth.signIn({email}, {redirectTo: "https://todos-svelte-supabase.vercel.app/"})
 
             if (error) throw error
 
