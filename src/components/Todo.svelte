@@ -10,7 +10,7 @@
         name="completed"
         type="checkbox"
         checked={todo.completed}
-        on:change={() => toggleTodoCompleted(todo.id)}
+        on:change={() => toggleTodoCompleted(todo.id,todo.completed)}
         class="mr-2 form-checkbox h-5 w-5"
         />
         <div class=" break-words break-all w-[90%] p-4">

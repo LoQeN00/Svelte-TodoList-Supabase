@@ -1,7 +1,6 @@
 <script>
     import TodoForm from "../components/TodoForm.svelte";
     import TodosList from "../components/TodosList.svelte";
-    
 </script>
 
 
