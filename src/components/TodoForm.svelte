@@ -5,6 +5,9 @@
     import {user} from "../stores/authStore"
 
     const handleSubmit = () => {
+
+        if (todo.length === 0) return 
+
         addTodo(todo,$user.id)
         todo = "";
     }
