@@ -6,8 +6,6 @@
     import { loadTodos } from "../stores/todoStore";
     import Navbar from "../components/Navbar.svelte"
 
-    console.log(supabase)
-
     user.set(supabase.auth.user())
 
     supabase.auth.onAuthStateChange((_,session) => {
